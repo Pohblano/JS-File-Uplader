@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="APP">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SEMANTIC -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdn.tlm.cloud/fontawesome/5.15.2/css/all.css"
+        integrity="sha384-+2e4h68pmq1jygCMJInB7m4qQ8/KId/WkeL2Qcg3YjJqYqjtUV1hk6CZm3SM+I2V" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/chat.css">
+
+  <title>Chatroom</title>
+  <script src="/socket.io/socket.io.js"></script>
+
+
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-center justify-content-center py-5 flex-column">
+    <header>
+      <!-- LOGO (main title/link to homepage) -->
+      <h1 class="main-title"><a href="../index.html" title="Back to homepage"><i class="fa fa-angle-double-left"></i>
+          Back</a></h1>
+    </header>
+
+      <!-- CONVO LIST SECTION (list all user specific conversations) -->
+      <section id="list-section" class=" w-25 ui vertical menu">
+          <!-- ADD CONVO (adds new user conversation) -->
+          <a class="add-convo item">New conversation <i class="fa fa-plus"></i></a>
+          <!-- CONAINER FOR ALL CONVERSATIONS -->
+          <div id="all-convos-container">
+            <!-- -------------------------------- -->
+            <!-- CONVERSATION LINKS renders here -->
+            <!-- --------------------------------- -->
+          </div>
+        </section>
+
+    <section id="convo-section" class="ui segments w-75 d-flex flex-column">
+
+      <!-- This gets rendered -->
+      <!-- This gets rendered -->
+      <div id="convo-header" class="ui segment d-flex flex-column align-items-center">
+        Main Lobby
+        
+        <a href="" id="join-chat" class="ui button">Join</a>
+        <a href="" id="leave-chat" class="ui button">Leave</a>
+      </div>
+      <!--  -->
+
+      <section id="all-messages-container" class="ui segment d-flex flex-column-reverse">
+        <!--                      -->
+        <!-- Messages render here -->
+        <!--                      -->
+        <nav class="show-more"><a href="#" class="more-msg user-link"></a></nav>
+
+      </section>
+
+      <!-- This gets rendered -->
+      <!-- This gets rendered -->
+      <div id="" class="convo-input ui right icon input segment">
+        <input class="input-msg" type="text" name="message" placeholder="Press enter to send...">
+        <a class="ui button submit-msg"><i class="send icon"></i></a>
+      </div>
+      <!--  -->
+
+    </section>
+   
+  </div>
+
+
+
+  <!-- SCRIPTs -->
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/chatViews.js" ></script>
+  <script src="../js/chatCtrls.js" ></script>
+  
+</body>
+
+</html>

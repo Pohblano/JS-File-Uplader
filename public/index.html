@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="APP">
+
+<head>
+  <meta charset="UTF-8">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SEMANTIC -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdn.tlm.cloud/fontawesome/5.15.2/css/all.css"
+        integrity="sha384-+2e4h68pmq1jygCMJInB7m4qQ8/KId/WkeL2Qcg3YjJqYqjtUV1hk6CZm3SM+I2V" crossorigin="anonymous">
+
+  <title>File Upload</title>
+  <style> 
+    h1{
+        font-size: 50px!important;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column align-items-center mt-5">
+  <h1 class="m-5 text-primary list-group-item"><i class="fa fa-code text-primary"></i> THE CLOUD</h1>
+  <!-- Upload form -->
+  <form id="form-upload" method='post' action='/upload' enctype="multipart/form-data">
+    <input type='file' name='fileUploaded'>
+    <input id="submit-upload" type='submit'>
+  </form>
+
+  <!-- Download Links -->
+  <section class="mt-5">
+    <h3>Files</h1>
+      <ul id="download-links" class="d-flex flex-column">
+        <!-- Downloadable links displayed here -->
+      </ul>
+  </section>
+
+  <section class="mt-5">
+    <h3>Chatroom Link (In-Construction)</h3>
+    <a href="./html/chat.html" >Go to chatroom...</a>
+
+  </section>
+
+  <!-- SCRIPTs -->
+  <script src="js/downloads.js"></script>
+</body>
+
+</html>

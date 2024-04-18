@@ -1,0 +1,23 @@
+{
+  "name": "fileupload",
+  "version": "1.0.0",
+  "description": "File uploader/downloader",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "A. Martinez-Jara",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "eslint-plugin-react-hooks": "^4.2.1-alpha-ed6c091fe-20210701",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.3",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.1.3"
+  }
+}
